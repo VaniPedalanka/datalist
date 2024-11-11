@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="places.html">
+        <select name="opt" id="opt">
+            <optgroup label="summer visits">
+                <option value>Munnar</option>
+                <option value>Manali</option>
+                <option value>Ladakh</option>
+            </optgroup>
+            <optgroup label="winter visits">
+                <option value>Rishikesh</option>
+                <option value>Auli</option>
+                <option value>Gulmarg</option>
+            </optgroup>
+        </select>
+        <br> <br>
+        <h3>check here</h3>
+        <form action="./places.html" method="get">
+            <label for="visits">select Your trip here</label>
+            <input list="visits" name="visit" id="visit">
+            <datalist id="visits">
+                <option value="Rishikesh">Rishikesh</option>
+                <option value="Auli">Auli</option>
+                <option value="Gulmarg">Gulmarg</option>
+            </datalist> 
+            <input type="submit">
+        </form>
+    </form>
+</body>
+</html>
